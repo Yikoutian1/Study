@@ -10,6 +10,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>Lambda</module>
+        <module>leetcode</module>
     </modules>
 
     <properties>
