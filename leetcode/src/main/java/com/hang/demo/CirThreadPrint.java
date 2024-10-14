@@ -35,14 +35,13 @@ public class CirThreadPrint {
                 condition.signalAll();
             } catch (InterruptedException e) {
                 // 如果线程在等待过程中被中断，打印堆栈跟踪信息
-                e.printStackTrace();
+                System.out.println("[e Msg]: " + e.getMessage());
             } finally {
                 // 在try块之后执行，确保锁被释放
                 lock.unlock();
             }
         }
     }
-
 
 
     public static void main(String[] args) {
