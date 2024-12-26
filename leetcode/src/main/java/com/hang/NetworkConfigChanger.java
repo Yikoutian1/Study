@@ -22,10 +22,10 @@ class NetworkInterface {
         return Objects.hash(name, type);
     }
 
-    @Override
-    public String toString() {
-        return type + " " + name;
-    }
+@Override
+public String toString() {
+    return type + " " + name;
+}
 }
 
 class BondInterface extends NetworkInterface {
